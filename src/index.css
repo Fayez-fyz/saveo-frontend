@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.map{
+  height: 80vh;
+}
+.marker {
+  background-image: url('https://static.thenounproject.com/png/39498-200.png');
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+  background-color: yellow;
+  border-radius: 11px;
+  border: solid 3px darkslategray;
+}
+
+.marker-delivery {
+  background-image: url('https://www.qcadvisor.com/wp-content/uploads/2019/09/pngtree-vector-location-icon-png-image_317888.jpg');
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+  border-radius: 15px;
+  border: solid darkslategrey 3px;
+}
+
+.grd{
+  padding: auto 0px auto 0px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  grid-auto-rows: 50px;
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+}
+.item3 {
+  grid-area: c;
+  align-self: end;
+}
